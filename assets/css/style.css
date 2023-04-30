@@ -163,7 +163,8 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   background-color: var(--bg-lavender-blush);
   color: var(--text-granite-gray);
   font-size: var(--fontSize-6);
@@ -182,11 +183,87 @@ body{
 
 /*-----------------------------------*\
   #PRELOADER
-\*-----------------------------------*
+\*-----------------------------------*/
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  background: var(--bg-lavender-blush);
+  z-index: 6;
+  transition: var(--transition-1);
+  -webkit-transition: var(--transition-1);
+  -moz-transition: var(--transition-1);
+  -ms-transition: var(--transition-1);
+  -o-transition: var(--transition-1);
+}
 
+.preloader.remove {
+  visibility: none;
+  opacity: 0;
+}
 
+.preloader .img {
+  animation: bounce 800ms ease-in-out infinite alternate;
+  -webkit-animation: bounce 800ms ease-in-out infinite alternate;
+}
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+.preloader-inner {
+  position: relative;
+
+}
+
+.preloader-inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background-color: var(--bg-black-alpha-20);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  z-index: -1;
+  animation: dropShadow 800ms ease-in-out infinite alternate;
+  -webkit-animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+
+@keyframes dropShadow {
+  0% {
+    width: 20%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
 
 /*-----------------------------------*\
   #HEADER

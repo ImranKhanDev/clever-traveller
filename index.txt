@@ -1,6 +1,5 @@
 Travelia - Explore the world
 
-This is a travel html template made by codewithsadee
 
 
 
@@ -217,9 +216,7 @@ placeholder = Email Address
 aria-label = send a message
 <ion-icon name="paper-plane-outline" aria-hidden="true"></ion-icon>
 
-Copyright 2023. Made by
-href = https://youtube.com/@codewithsadee
-codewithsadee
+
 
 Terms and Condition
 Privacy and Policy
