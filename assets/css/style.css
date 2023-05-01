@@ -6,16 +6,11 @@
 
  */
 
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
 :root {
-
   /**
    * COLORS
    */
@@ -51,7 +46,7 @@
    */
 
   /* font family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
 
   /* font size */
   --fontSize-1: 4.2rem;
@@ -98,12 +93,7 @@
   --transition-1: 250ms ease;
   --transition-2: 500ms ease;
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-
 }
-
-
-
-
 
 /*-----------------------------------*\
   #RESET
@@ -171,15 +161,12 @@ body {
   line-height: 1.8;
 }
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-
-
-
-
+.container {
+  padding-inline: 16px;
+}
 
 /*-----------------------------------*\
   #PRELOADER
@@ -232,7 +219,6 @@ body {
 
 .preloader-inner {
   position: relative;
-
 }
 
 .preloader-inner::after {
@@ -268,66 +254,57 @@ body {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
-
-
-
+.navbar,
+.overlay {
+  display: none;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding-block: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+.header.active {
+  position: fixed;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-1);
+}
+/* *27min 11 sec */
 
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #DESTINATION
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #GALLERY
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
 
-
-
-
-
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
-
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
