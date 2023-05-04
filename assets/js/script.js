@@ -34,3 +34,4 @@ const header = document.querySelector('[data-header]');
 window.addEventListener('scroll', function () {
     header.classList[window.scrollY > 100 ? 'add' : 'remove']('active')
 })
+//*1.34.24 destination 
